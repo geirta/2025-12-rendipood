@@ -21,13 +21,13 @@ public class FilmController {
         }
         film.setInStock(true);
         filmRepository.save(film);
-        return filmRepository.findAll();
+        return filmRepository.findAllByOrderByIdAsc();
     }
 
     @DeleteMapping("films/{id}")
     public List<Film> deleteFilm(@PathVariable Long id) {
         filmRepository.deleteById(id);
-        return filmRepository.findAll();
+        return filmRepository.findAllByOrderByIdAsc();
     }
 
     @PatchMapping("film-type")
@@ -36,15 +36,31 @@ public class FilmController {
                 .orElseThrow(() -> new RuntimeException("Film with id " + id + " not found"));
         film.setType(type);
         filmRepository.save(film);
-        return filmRepository.findAll();
+        return filmRepository.findAllByOrderByIdAsc();
     }
 
     @GetMapping("films")
     public List<Film> filmsInStore(@RequestParam(required = false) Boolean inStock) {
         if (inStock == null) {
-            return filmRepository.findAll();
+            return filmRepository.findAllByOrderByIdAsc();
         }
-        return filmRepository.findByInStock(inStock);
+        return filmRepository.findByInStockOrderByIdAsc(inStock);
+    }
+
+
+
+
+    // enda jaoks suvalt tehtud, et saaks testimise k2igus mitu filmi korraga lisada
+    @PostMapping("films-multi")
+    public List<Film> addFilm(@RequestBody List<Film> films) {
+        for (Film f : films) {
+            if (f.getId() != null) {
+                throw new RuntimeException("Can't add a film without an id");
+            }
+            f.setInStock(true);
+            filmRepository.save(f);
+        }
+        return filmRepository.findAllByOrderByIdAsc();
     }
 
 
