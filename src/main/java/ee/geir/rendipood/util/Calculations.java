@@ -8,15 +8,6 @@ public class Calculations {
     private static final double BASIC_PRICE = 3;
     private static final double PREMIUM_PRICE = 4;
 
-    // MARGUS
-
-    public static double initialFee(FilmType filmType, int days){
-        return switch(filmType){
-            case NEW -> PREMIUM_PRICE * days;
-            case REGULAR -> BASIC_PRICE + BASIC_PRICE * Math.max(0, days - 3);
-            case OLD -> BASIC_PRICE + BASIC_PRICE * Math.max(0, days - 5);
-        };
-    }
 
     public static double lateFee(FilmType filmType, int days){
         return switch(filmType){
@@ -26,12 +17,7 @@ public class Calculations {
         };
     }
 
-
-
-    // GEIR
-
     public static double calculatePrice(FilmType filmType, int days) {
-
         return switch (filmType) {
             case NEW -> days * PREMIUM_PRICE;
             case REGULAR -> days <= 3 ? BASIC_PRICE : BASIC_PRICE + (days - 3) * BASIC_PRICE;

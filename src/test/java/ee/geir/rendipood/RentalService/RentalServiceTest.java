@@ -3,8 +3,12 @@ package ee.geir.rendipood.RentalService;
 import ee.geir.rendipood.dto.RentalFilmDTO;
 import ee.geir.rendipood.entity.Film;
 import ee.geir.rendipood.entity.FilmType;
+import ee.geir.rendipood.entity.Rental;
+import ee.geir.rendipood.entity.RentalFilm;
 import ee.geir.rendipood.repository.FilmRepository;
+import ee.geir.rendipood.repository.RentalFilmRepository;
 import ee.geir.rendipood.repository.RentalRepository;
+import ee.geir.rendipood.util.Calculations;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -32,6 +36,9 @@ class RentalServiceTest {
 
     @Mock
     private RentalRepository rentalRepository;
+
+    @Mock
+    private RentalFilmRepository rentalFilmRepository;
 
     @InjectMocks
     private RentalService rentalService;
@@ -61,6 +68,12 @@ class RentalServiceTest {
         return rentalFilmDTO;
     }
 
+
+    // START RENTAL TESTING
+    // START RENTAL TESTING
+    // START RENTAL TESTING
+
+
     @Test
     void givenFilmIsNotInStock_whenRentalIsStarted_thenExceptionIsThrown() {
         mockSaveFilmToDb(1L, "Pirates of the Caribbean", FilmType.REGULAR, false);
@@ -71,6 +84,19 @@ class RentalServiceTest {
 
         String message = assertThrows(RuntimeException.class, () -> rentalService.startRental(rentalFilmDTOList)).getMessage();
         assertEquals("Film is not in stock", message);
+    }
+
+    @Test
+    void givenFilmIsInStock_whenRentalIsStarted_thenStockStatusIsChangedToFalse() {
+        mockSaveFilmToDb(1L, "Pirates of the Caribbean", FilmType.REGULAR, true);
+
+        RentalFilmDTO rentalFilmDTO = getRentalFilmDTO(1L, 1);
+        List<RentalFilmDTO> rentalFilmDTOList = new ArrayList<>();
+        rentalFilmDTOList.add(rentalFilmDTO);
+        rentalService.startRental(rentalFilmDTOList);
+
+        boolean stockStatus = filmRepository.findById(1L).get().getInStock();
+        assertEquals(false, stockStatus);
     }
 
     @Test
@@ -85,8 +111,65 @@ class RentalServiceTest {
         assertEquals(3, sum);
     }
 
+    @Test
+    void givenFilmIsRegularAndRentedFor6Days_whenRentalIsStarted_thenInitialFeeIs12() {
+        mockSaveFilmToDb(3L, "Matrix", FilmType.REGULAR, true);
+
+        RentalFilmDTO rentalFilmDTO = getRentalFilmDTO(3L, 6);
+        List<RentalFilmDTO> rentalFilmDTOList = new ArrayList<>();
+        rentalFilmDTOList.add(rentalFilmDTO);
+
+        double sum = rentalService.startRental(rentalFilmDTOList);
+        assertEquals(12, sum);
+    }
 
     @Test
-    void endRental() {
+    void givenFilmIsNewAndRentedFor6Days_whenRentalIsStarted_thenInitialFeeIs24() {
+        mockSaveFilmToDb(3L, "Matrix", FilmType.NEW, true);
+
+        RentalFilmDTO rentalFilmDTO = getRentalFilmDTO(3L, 6);
+        List<RentalFilmDTO> rentalFilmDTOList = new ArrayList<>();
+        rentalFilmDTOList.add(rentalFilmDTO);
+
+        double sum = rentalService.startRental(rentalFilmDTOList);
+        assertEquals(24, sum);
     }
+
+    @Test
+    void givenFilmListContains1OutOfStock_whenRentalIsStarted_thenExceptionIsThrown() {
+        mockSaveFilmToDb(4L, "Matrix", FilmType.NEW, true);
+        mockSaveFilmToDb(5L, "Spiderman 3", FilmType.NEW, false);
+
+        RentalFilmDTO rentalFilmDTO = getRentalFilmDTO(4L, 6);
+        RentalFilmDTO rentalFilmDTO2 = getRentalFilmDTO(5L, 6);
+        List<RentalFilmDTO> rentalFilmDTOList = new ArrayList<>();
+        rentalFilmDTOList.add(rentalFilmDTO);
+        rentalFilmDTOList.add(rentalFilmDTO2);
+
+        String message = assertThrows(RuntimeException.class, () -> rentalService.startRental(rentalFilmDTOList)).getMessage();
+        assertEquals("Film is not in stock", message);
+    }
+
+
+    // END RENTAL TESTING
+    // END RENTAL TESTING
+    // END RENTAL TESTING
+
+
+    @Test
+    void giveFilmIsNewAndRentedFor3Days_whenRentalIsEndedIn4Days_thenLateFeeIs4Eur() {
+        mockSaveFilmToDb(6L, "Kill Bill", FilmType.NEW, true);
+
+        RentalFilmDTO rentalFilmDTO = getRentalFilmDTO(6L,3);
+        List<RentalFilmDTO> rentalFilmDTOList = new ArrayList<>();
+        rentalFilmDTOList.add(rentalFilmDTO);
+        double sumStart = rentalService.startRental(rentalFilmDTOList);
+
+        RentalFilmDTO rentalFilmDTO2 = getRentalFilmDTO(6L, 5);
+        List<RentalFilmDTO> rentalFilmDTOList2 = new ArrayList<>();
+        rentalFilmDTOList2.add(rentalFilmDTO2);
+        double sumEnd = rentalService.endRental(rentalFilmDTOList2);
+        assertEquals(8, sumEnd);
+    }
+
 }

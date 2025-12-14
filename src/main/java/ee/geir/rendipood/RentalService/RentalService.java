@@ -38,11 +38,9 @@ public class RentalService {
             film.setInStock(false);
             films.add(film);
 
-            // siin ehitan valmis RentalFilm entity mudelit
             RentalFilm rentalFilm = getRentalFilm(rentalFilmDTO, film, rental);
             rentalFilmList.add(rentalFilm);
 
-            // TODO: KOJU :: arvuta hind vastavalt tüübile ja võetud päevadele
             double filmRentalPrice = Calculations.calculatePrice(film.getType(), rentalFilmDTO.getDays());
             sum += filmRentalPrice;
         }
@@ -68,7 +66,6 @@ public class RentalService {
     }
 
     public double endRental(List<RentalFilmDTO> rentalFilms) {
-
         double sum = 0;
         List<Film> films = new ArrayList<>();
         List<RentalFilm> rentalFilmsList = new ArrayList<>();
@@ -86,7 +83,6 @@ public class RentalService {
             rental.setLateFee(sum);
             rentals.add(rental);
         }
-
         filmRepository.saveAll(films);
         rentalRepository.saveAll(rentals);
         rentalFilmRepository.saveAll(rentalFilmsList);
