@@ -31,4 +31,5 @@ public class RentalFilm {
     private Rental rental;
 
     private boolean returned;
+
 }

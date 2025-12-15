@@ -165,6 +165,7 @@ class RentalServiceTest {
         rentalFilmDTOList.add(rentalFilmDTO);
         double sumStart = rentalService.startRental(rentalFilmDTOList);
 
+
         RentalFilmDTO rentalFilmDTO2 = getRentalFilmDTO(6L, 5);
         List<RentalFilmDTO> rentalFilmDTOList2 = new ArrayList<>();
         rentalFilmDTOList2.add(rentalFilmDTO2);
