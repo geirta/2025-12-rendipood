@@ -155,6 +155,23 @@ class RentalServiceTest {
     // END RENTAL TESTING
     // END RENTAL TESTING
 
+    @Test
+    void giveFilmDoesntExist_whenRentalIsEnded_thenExceptionIsThrown() {
+        mockSaveFilmToDb(6L, "Kill Bill", FilmType.NEW, true);
+
+        RentalFilmDTO rentalFilmDTO = getRentalFilmDTO(6L,3);
+        List<RentalFilmDTO> rentalFilmDTOList = new ArrayList<>();
+        rentalFilmDTOList.add(rentalFilmDTO);
+        rentalService.startRental(rentalFilmDTOList);
+
+        RentalFilmDTO rentalFilmDTO2 = getRentalFilmDTO(8L, 5);
+        List<RentalFilmDTO> rentalFilmDTOList2 = new ArrayList<>();
+        rentalFilmDTOList2.add(rentalFilmDTO2);
+
+        String message = assertThrows(RuntimeException.class, () -> rentalService.endRental(rentalFilmDTOList2)).getMessage();
+        assertEquals("No value present", message);
+    }
+
 
     @Test
     void giveFilmIsNewAndRentedFor3Days_whenRentalIsEndedIn4Days_thenLateFeeIs4Eur() {
@@ -163,8 +180,7 @@ class RentalServiceTest {
         RentalFilmDTO rentalFilmDTO = getRentalFilmDTO(6L,3);
         List<RentalFilmDTO> rentalFilmDTOList = new ArrayList<>();
         rentalFilmDTOList.add(rentalFilmDTO);
-        double sumStart = rentalService.startRental(rentalFilmDTOList);
-
+        rentalService.startRental(rentalFilmDTOList);
 
         RentalFilmDTO rentalFilmDTO2 = getRentalFilmDTO(6L, 5);
         List<RentalFilmDTO> rentalFilmDTOList2 = new ArrayList<>();

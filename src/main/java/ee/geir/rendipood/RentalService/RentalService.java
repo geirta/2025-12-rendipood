@@ -79,7 +79,9 @@ public class RentalService {
             RentalFilm rentalFilm = getRentalFilm(dto, rentalFilmsList);
 
             Rental rental = rentalRepository.findById(rentalFilm.getRental().getId()).orElseThrow();
-            sum += rental.getLateFee() + Calculations.lateFee(film.getType(), rentalFilm.getInitialDays());
+
+            int lateDays = Math.max(0, dto.getDays() - rentalFilm.getInitialDays());
+            sum += rental.getLateFee() + Calculations.lateFee(film.getType(), lateDays);
             rental.setLateFee(sum);
             rentals.add(rental);
         }
