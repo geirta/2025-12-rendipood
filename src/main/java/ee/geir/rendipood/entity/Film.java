@@ -23,11 +23,5 @@ public class Film {
     private FilmType type;
     private Boolean inStock;
 
-    @Override
-    public String toString() {
-        return "Film name: " + this.name
-                + " | Film genre: " + this.type
-                + " | Is in stock: " + this.inStock + "<br>";
-    }
 
 }

@@ -189,4 +189,27 @@ class RentalServiceTest {
         assertEquals(8, sumEnd);
     }
 
+/*
+    @Test
+    void givenWhenFilmIsOldAndRentedForTwoDaysAndReturnedOneDayLate_whenRentalIsEnded_thenLateFeeIsThree(){
+        Film film = new Film(1L, "Spiderman", "", OLD, false);
+        mockSaveFilmToDb(film);
+        Rental rental = new Rental();
+        rental.setId(1L);
+        rental.setInitialFee(8);
+        rental.setLateFee(0);
+
+        RentalFilm rentalFilm = new RentalFilm(1L, film, 2, 0, rental, false);
+
+        when(rentalRepository.findById(1L)).thenReturn(Optional.of(rental));
+        when(rentalFilmRepository.findByFilm_IdAndReturnedFalse(1L)).thenReturn(Optional.of(rentalFilm));
+
+        RentalFilmDTO rentalFilmDTO = getRentalFilmDTO(1L, 3);
+        List<RentalFilmDTO> rentalFilmDTOList = new ArrayList<>();
+        rentalFilmDTOList.add(rentalFilmDTO);
+
+        double sum = rentalService.endRental(rentalFilmDTOList);
+        assertEquals(3, sum);
+    }*/
+
 }
