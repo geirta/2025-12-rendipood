@@ -1,43 +1,57 @@
-import { useEffect, useState } from 'react'
+
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import type {Film} from './model/Film'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Home from './pages/Home'
+import Films from './pages/Films'
+import Rentals from './pages/Rentals'
+import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
+import { useEffect, useMemo, useState } from 'react';
+
+const getInitialMode = (): 'light' | 'dark' => {
+  const saved = localStorage.getItem('theme');
+  return saved === 'light' || saved === 'dark' ? saved : 'dark';
+};
 
 function App() {
-  const [films, setFilms] = useState<Film[]>([])
 
+  const [mode, setMode] = useState<'light' | 'dark'>(getInitialMode);
+  
   useEffect(() => {
-    fetch("http://localhost:8080/films")
-      .then(res => res.json())
-      .then(json => setFilms(json))
-  });
+    localStorage.setItem('theme', mode);
+  }, [mode]);
 
+  const theme = useMemo(() => 
+    createTheme({
+        palette: {
+          mode,
+        },
+      }), [mode]
+  );
+
+  const toggleTheme = () => {
+    setMode(prev => (prev === 'dark' ? 'light' : 'dark'));
+  };
 
   return (
     <>
-      <div className='container'>
-            <h2 className='text-center'>List of Films</h2>
-            <table className='table table-hover table-bordered'>
-                <thead className='table-success'>
-                    <tr>
-                        <th>ID</th>
-                        <th>Film name</th>
-                        <th>Film Type</th>
-                        <th>Stock</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        films.map(film =>
-                            <tr key={film.id}>
-                                <td>{film.id}</td>
-                                <td>{film.name}</td>
-                                <td>{film.type}</td>
-                                <td>{film.inStock}</td>
-                            </tr>)
-                    }
-                </tbody>
-            </table>
+      <ThemeProvider theme={theme} >
+        <CssBaseline />
+        <div className='app'>
+          <Header mode={mode} toggleTheme={toggleTheme} />
+
+          <main className='content'>
+          <Routes>
+            <Route path='/' element={<Home/>}></Route>
+            <Route path='/films' element={<Films/>}></Route>
+            <Route path='/rentals' element={<Rentals/>}></Route>
+          </Routes>
+          </main>
+
+          <Footer />
         </div>
+      </ThemeProvider>
     </>
   )
 }

@@ -5,6 +5,7 @@ import ee.geir.rendipood.entity.Film;
 import ee.geir.rendipood.entity.FilmType;
 import ee.geir.rendipood.repository.FilmRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,6 +36,11 @@ public class FilmController {
     public List<Film> deleteFilm(@PathVariable Long id){
         return filmService.deleteFilm(id);
     }
+//    @DeleteMapping("films/{id}")
+//    public ResponseEntity<Void> deleteFilm(@PathVariable Long id){
+//        filmService.deleteFilm(id);
+//        return ResponseEntity.noContent().build();
+//    }
 
     @PatchMapping("films-type")
     public List<Film> updateFilm(@RequestParam Long id, @RequestParam FilmType type){

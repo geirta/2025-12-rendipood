@@ -1,0 +1,64 @@
+{
+    "header": {
+        "storeName": "Rental Shop",
+        "films": "Films",
+        "rentals": "Rentals"
+    },
+    "footer": {
+        "rights": "All rights reserved 2025 | GT"
+    },
+    "addFilm": {
+        "title": "Add new film",
+        "name": "Film name",
+        "type": "Filmi type",
+        "addButton": "Add film"
+    },
+    "films": {
+        "title": "List of films",
+        "header": {
+            "filmName": "Film name",
+            "filmType": "Film type",
+            "inStock": "Stock",
+            "actions": "Actions"
+        },
+        "selectFilmType": "-- Select film type --",
+        "filmType": {
+            "NEW": "New",
+            "REGULAR": "Regular",
+            "OLD": "Old"
+        },
+        "inStock": {
+            "true": "In stock",
+            "false": "Out of stock"
+        },
+        "edit": "Edit",
+        "delete": "Delete",
+        "cancel": "Cancel"
+    },
+    "home": {
+        "startRental": {
+            "title": "Start rental",
+            "film": "Film",
+            "days": "Days",
+            "addFilmBtn": "Add film",
+            "selectFilm": "-- Select film --"
+        },
+        "selectedMovies": {
+            "title": "Selected films",
+            "name": "Film name",
+            "days": "Days",
+            "remove": "Remove",
+            "startRentalBtn": "Start rental",
+            "removeFilmBtn": "Remove"
+        }
+    },
+    "rentals": {
+        "return": "Return films",
+        "filmName": "Film name",
+        "days": "Actual days",
+        "returnBtn": "Return film",
+        "active": "Active rentals",
+        "initialFee": "Initial fee",
+        "lateFee": "Late fee"
+    }
+}

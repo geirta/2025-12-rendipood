@@ -1,18 +1,18 @@
-2025-12-18T10:11:09.659+02:00  INFO 11432 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : Starting RendipoodApplication using Java 25.0.1 with PID 11432 (C:\Users\i9\Documents\GitHub\2025-12-rendipood\target\classes started by i9 in C:\Users\i9\Documents\GitHub\2025-12-rendipood)
-2025-12-18T10:11:09.668+02:00  INFO 11432 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-12-18T10:11:10.545+02:00  INFO 11432 --- [rendipood] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-18T10:11:10.604+02:00  INFO 11432 --- [rendipood] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
-2025-12-18T10:11:11.155+02:00  INFO 11432 --- [rendipood] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-18T10:11:11.170+02:00  INFO 11432 --- [rendipood] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-18T10:11:11.170+02:00  INFO 11432 --- [rendipood] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-18T10:11:11.246+02:00  INFO 11432 --- [rendipood] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1517 ms
-2025-12-18T10:11:11.538+02:00  INFO 11432 --- [rendipood] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-18T10:11:11.619+02:00  INFO 11432 --- [rendipood] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
-2025-12-18T10:11:12.164+02:00  INFO 11432 --- [rendipood] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-18T10:11:12.198+02:00  INFO 11432 --- [rendipood] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-18T10:11:12.340+02:00  INFO 11432 --- [rendipood] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75959b0c
-2025-12-18T10:11:12.342+02:00  INFO 11432 --- [rendipood] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-18T10:11:12.401+02:00  INFO 11432 --- [rendipood] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-12-27T10:38:54.997+02:00  INFO 38084 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : Starting RendipoodApplication using Java 25.0.1 with PID 38084 (C:\Users\i9\Documents\GitHub\2025-12-rendipood\target\classes started by i9 in C:\Users\i9\Documents\GitHub\2025-12-rendipood)
+2025-12-27T10:38:55.004+02:00  INFO 38084 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-27T10:38:55.687+02:00  INFO 38084 --- [rendipood] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-27T10:38:55.733+02:00  INFO 38084 --- [rendipood] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2025-12-27T10:38:56.104+02:00  INFO 38084 --- [rendipood] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-27T10:38:56.115+02:00  INFO 38084 --- [rendipood] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-27T10:38:56.116+02:00  INFO 38084 --- [rendipood] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-27T10:38:56.161+02:00  INFO 38084 --- [rendipood] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1109 ms
+2025-12-27T10:38:56.308+02:00  INFO 38084 --- [rendipood] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-27T10:38:56.372+02:00  INFO 38084 --- [rendipood] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-27T10:38:56.729+02:00  INFO 38084 --- [rendipood] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-27T10:38:56.756+02:00  INFO 38084 --- [rendipood] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-27T10:38:56.873+02:00  INFO 38084 --- [rendipood] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1bd59b82
+2025-12-27T10:38:56.874+02:00  INFO 38084 --- [rendipood] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-27T10:38:56.922+02:00  INFO 38084 --- [rendipood] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/rendipood]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -24,36 +24,33 @@
 	Pool: DatasourceConnectionProviderImpl
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-18T10:11:13.305+02:00  INFO 11432 --- [rendipood] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-18T10:11:13.381+02:00  INFO 11432 --- [rendipood] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-18T10:11:13.480+02:00  INFO 11432 --- [rendipood] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-12-18T10:11:13.751+02:00  WARN 11432 --- [rendipood] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-18T10:11:13.792+02:00  INFO 11432 --- [rendipood] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-12-18T10:11:14.190+02:00  INFO 11432 --- [rendipood] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-18T10:11:14.198+02:00  INFO 11432 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : Started RendipoodApplication in 5.042 seconds (process running for 5.487)
-2025-12-18T10:31:09.935+02:00  INFO 11432 --- [rendipood] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-18T10:31:09.936+02:00  INFO 11432 --- [rendipood] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-18T10:31:09.937+02:00  INFO 11432 --- [rendipood] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-18T10:36:31.926+02:00  INFO 11432 --- [rendipood] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-18T10:36:31.930+02:00  INFO 11432 --- [rendipood] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-18T10:36:31.932+02:00  INFO 11432 --- [rendipood] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-12-18T10:36:31.933+02:00  INFO 11432 --- [rendipood] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-18T10:36:31.935+02:00  INFO 11432 --- [rendipood] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-18T10:36:39.117+02:00  INFO 46132 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : Starting RendipoodApplication using Java 25.0.1 with PID 46132 (C:\Users\i9\Documents\GitHub\2025-12-rendipood\target\classes started by i9 in C:\Users\i9\Documents\GitHub\2025-12-rendipood)
-2025-12-18T10:36:39.120+02:00  INFO 46132 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-12-18T10:36:39.941+02:00  INFO 46132 --- [rendipood] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-18T10:36:40.005+02:00  INFO 46132 --- [rendipood] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
-2025-12-18T10:36:40.418+02:00  INFO 46132 --- [rendipood] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-18T10:36:40.436+02:00  INFO 46132 --- [rendipood] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-18T10:36:40.437+02:00  INFO 46132 --- [rendipood] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-18T10:36:40.494+02:00  INFO 46132 --- [rendipood] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1320 ms
-2025-12-18T10:36:40.678+02:00  INFO 46132 --- [rendipood] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-18T10:36:40.733+02:00  INFO 46132 --- [rendipood] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
-2025-12-18T10:36:41.144+02:00  INFO 46132 --- [rendipood] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-18T10:36:41.171+02:00  INFO 46132 --- [rendipood] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-18T10:36:41.404+02:00  INFO 46132 --- [rendipood] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e0d058a
-2025-12-18T10:36:41.406+02:00  INFO 46132 --- [rendipood] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-18T10:36:41.459+02:00  INFO 46132 --- [rendipood] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-12-27T10:38:57.586+02:00  INFO 38084 --- [rendipood] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-27T10:38:57.653+02:00  INFO 38084 --- [rendipood] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-27T10:38:57.712+02:00  INFO 38084 --- [rendipood] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-27T10:38:57.906+02:00  WARN 38084 --- [rendipood] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-27T10:38:57.933+02:00  INFO 38084 --- [rendipood] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-27T10:38:58.241+02:00  INFO 38084 --- [rendipood] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-27T10:38:58.248+02:00  INFO 38084 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : Started RendipoodApplication in 3.572 seconds (process running for 8.0)
+2025-12-27T10:38:59.872+02:00  INFO 38084 --- [rendipood] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-27T10:38:59.876+02:00  INFO 38084 --- [rendipood] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-27T10:38:59.879+02:00  INFO 38084 --- [rendipood] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-27T10:38:59.881+02:00  INFO 38084 --- [rendipood] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-27T10:38:59.883+02:00  INFO 38084 --- [rendipood] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-27T16:34:09.038+02:00  INFO 31852 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : Starting RendipoodApplication using Java 25.0.1 with PID 31852 (C:\Users\i9\Documents\GitHub\2025-12-rendipood\target\classes started by i9 in C:\Users\i9\Documents\GitHub\2025-12-rendipood)
+2025-12-27T16:34:09.040+02:00  INFO 31852 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-27T16:34:09.598+02:00  INFO 31852 --- [rendipood] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-27T16:34:09.640+02:00  INFO 31852 --- [rendipood] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2025-12-27T16:34:09.958+02:00  INFO 31852 --- [rendipood] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-27T16:34:09.969+02:00  INFO 31852 --- [rendipood] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-27T16:34:09.970+02:00  INFO 31852 --- [rendipood] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-27T16:34:10.015+02:00  INFO 31852 --- [rendipood] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 942 ms
+2025-12-27T16:34:10.146+02:00  INFO 31852 --- [rendipood] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-27T16:34:10.193+02:00  INFO 31852 --- [rendipood] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-27T16:34:10.517+02:00  INFO 31852 --- [rendipood] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-27T16:34:10.539+02:00  INFO 31852 --- [rendipood] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-27T16:34:10.652+02:00  INFO 31852 --- [rendipood] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6774f264
+2025-12-27T16:34:10.653+02:00  INFO 31852 --- [rendipood] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-27T16:34:10.697+02:00  INFO 31852 --- [rendipood] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/rendipood]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -65,18 +62,18 @@
 	Pool: DatasourceConnectionProviderImpl
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-18T10:36:42.162+02:00  INFO 46132 --- [rendipood] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-18T10:36:42.236+02:00  INFO 46132 --- [rendipood] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-18T10:36:42.308+02:00  INFO 46132 --- [rendipood] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-12-18T10:36:42.570+02:00  WARN 46132 --- [rendipood] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-18T10:36:42.605+02:00  INFO 46132 --- [rendipood] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-12-18T10:36:42.948+02:00  INFO 46132 --- [rendipood] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-18T10:36:42.953+02:00  INFO 46132 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : Started RendipoodApplication in 4.262 seconds (process running for 4.663)
-2025-12-18T10:36:48.844+02:00  INFO 46132 --- [rendipood] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-18T10:36:48.844+02:00  INFO 46132 --- [rendipood] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-18T10:36:48.846+02:00  INFO 46132 --- [rendipood] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-18T10:42:10.084+02:00  INFO 46132 --- [rendipood] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-18T10:42:10.091+02:00  INFO 46132 --- [rendipood] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-18T10:42:10.096+02:00  INFO 46132 --- [rendipood] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-12-18T10:42:10.101+02:00  INFO 46132 --- [rendipood] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-18T10:42:10.105+02:00  INFO 46132 --- [rendipood] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-27T16:34:11.289+02:00  INFO 31852 --- [rendipood] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-27T16:34:11.351+02:00  INFO 31852 --- [rendipood] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-27T16:34:11.408+02:00  INFO 31852 --- [rendipood] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-27T16:34:11.605+02:00  WARN 31852 --- [rendipood] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-27T16:34:11.628+02:00  INFO 31852 --- [rendipood] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-27T16:34:11.916+02:00  INFO 31852 --- [rendipood] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-27T16:34:11.922+02:00  INFO 31852 --- [rendipood] [main] ee.geir.rendipood.RendipoodApplication   : Started RendipoodApplication in 3.195 seconds (process running for 7.015)
+2025-12-27T16:35:02.093+02:00  INFO 31852 --- [rendipood] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-27T16:35:02.094+02:00  INFO 31852 --- [rendipood] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-27T16:35:02.095+02:00  INFO 31852 --- [rendipood] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-27T20:26:15.589+02:00  INFO 31852 --- [rendipood] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-27T20:26:15.594+02:00  INFO 31852 --- [rendipood] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-27T20:26:15.597+02:00  INFO 31852 --- [rendipood] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-27T20:26:15.600+02:00  INFO 31852 --- [rendipood] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-27T20:26:15.601+02:00  INFO 31852 --- [rendipood] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

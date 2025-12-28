@@ -99,4 +99,8 @@ public class RentalService {
         return rentalFilm;
     }
 
+    public List<Rental> getAllRentals() {
+        return rentalRepository.findAll();
+    }
+
 }

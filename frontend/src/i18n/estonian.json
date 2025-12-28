@@ -1,0 +1,64 @@
+{
+    "header": {
+        "storeName": "Rendipood",
+        "films": "Filmid",
+        "rentals": "Rendid"
+    },
+    "footer": {
+        "rights": "Kõik õigused kaitstud 2025 | GT"
+    },
+    "addFilm": {
+        "title": "Lisa uus film",
+        "name": "Filmi nimi",
+        "type": "Filmi tüüp",
+        "addButton": "Lisa film"
+    },
+    "films": {
+        "title": "Filmide nimekiri",
+        "header": {
+            "filmName": "Filmi nimi",
+            "filmType": "Filmi tüüp",
+            "inStock": "On laos",
+            "actions": "Tegutse"
+        },
+        "selectFilmType": "-- Vali filmi tüüp --",
+        "filmType": {
+            "NEW": "Uus",
+            "REGULAR": "Tavaline",
+            "OLD": "Vana"
+        },
+        "inStock": {
+            "true": "Laos",
+            "false": "Otsas"
+        },
+        "edit": "Redigeeri",
+        "delete": "Kustuta",
+        "cancel": "Tühista"
+    },
+    "home": {
+        "startRental": {
+            "title": "Alusta renti",
+            "film": "Film",
+            "days": "Päevade arv",
+            "addFilmBtn": "Lisa film",
+            "selectFilm": "-- Vali film --"
+        },
+        "selectedMovies": {
+            "title": "Valitud filmid",
+            "name": "Filmi nimi",
+            "days": "Päevade arv",
+            "remove": "Eemalda",
+            "startRentalBtn": "Alusta renti",
+            "removeFilmBtn": "Eemalda"
+        }
+    },
+    "rentals": {
+        "return": "Tagasta filme",
+        "filmName": "Filmi nimi",
+        "days": "Tegelikud päevad",
+        "returnBtn": "Tagasta",
+        "active": "Aktiivsed rendid",
+        "initialFee": "Algne tasu",
+        "lateFee": "Hiline tasu"
+    }
+}
