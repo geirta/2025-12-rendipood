@@ -7,13 +7,13 @@
     "footer": {
         "rights": "All rights reserved 2025 | GT"
     },
-    "addFilm": {
-        "title": "Add new film",
-        "name": "Film name",
-        "type": "Filmi type",
-        "addButton": "Add film"
-    },
     "films": {
+        "addFilm": {
+            "title": "Add new film",
+            "name": "Film name",
+            "type": "Film type",
+            "button": "Add film"
+        },
         "title": "List of films",
         "header": {
             "filmName": "Film name",
@@ -37,16 +37,17 @@
     },
     "home": {
         "startRental": {
-            "title": "Start rental",
+            "title": "Add film to cart",
             "film": "Film",
             "days": "Days",
-            "addFilmBtn": "Add film",
+            "addFilmBtn": "Add to cart",
             "selectFilm": "-- Select film --"
         },
         "selectedMovies": {
             "title": "Selected films",
             "name": "Film name",
             "days": "Days",
+            "price": "Price",
             "remove": "Remove",
             "startRentalBtn": "Start rental",
             "removeFilmBtn": "Remove"
@@ -58,7 +59,9 @@
         "days": "Actual days",
         "returnBtn": "Return film",
         "active": "Active rentals",
+        "returned": "Returned rentals",
         "initialFee": "Initial fee",
-        "lateFee": "Late fee"
+        "lateFee": "Late fee",
+        "films": "Films"
     }
 }

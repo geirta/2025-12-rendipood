@@ -7,18 +7,18 @@
     "footer": {
         "rights": "Kõik õigused kaitstud 2025 | GT"
     },
-    "addFilm": {
-        "title": "Lisa uus film",
-        "name": "Filmi nimi",
-        "type": "Filmi tüüp",
-        "addButton": "Lisa film"
-    },
     "films": {
+        "addFilm": {
+            "title": "Lisa uus film",
+            "name": "Filmi nimi",
+            "type": "Filmi tüüp",
+            "button": "Lisa film"
+        },
         "title": "Filmide nimekiri",
         "header": {
             "filmName": "Filmi nimi",
             "filmType": "Filmi tüüp",
-            "inStock": "On laos",
+            "inStock": "Laoseis",
             "actions": "Tegutse"
         },
         "selectFilmType": "-- Vali filmi tüüp --",
@@ -37,28 +37,31 @@
     },
     "home": {
         "startRental": {
-            "title": "Alusta renti",
+            "title": "Lisa film ostukorvi",
             "film": "Film",
             "days": "Päevade arv",
-            "addFilmBtn": "Lisa film",
+            "addFilmBtn": "Lisa korvi",
             "selectFilm": "-- Vali film --"
         },
         "selectedMovies": {
             "title": "Valitud filmid",
             "name": "Filmi nimi",
             "days": "Päevade arv",
+            "price": "Hind",
             "remove": "Eemalda",
             "startRentalBtn": "Alusta renti",
             "removeFilmBtn": "Eemalda"
         }
     },
     "rentals": {
-        "return": "Tagasta filme",
+        "return": "Tagasta film",
         "filmName": "Filmi nimi",
         "days": "Tegelikud päevad",
         "returnBtn": "Tagasta",
         "active": "Aktiivsed rendid",
+        "returned": "Tagastatud rendid",
         "initialFee": "Algne tasu",
-        "lateFee": "Hiline tasu"
+        "lateFee": "Hiline tasu",
+        "films": "Filmid"
     }
 }

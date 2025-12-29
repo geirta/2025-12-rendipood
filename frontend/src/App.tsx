@@ -8,6 +8,7 @@ import Films from './pages/Films'
 import Rentals from './pages/Rentals'
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import { useEffect, useMemo, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
 
 const getInitialMode = (): 'light' | 'dark' => {
   const saved = localStorage.getItem('theme');
@@ -51,6 +52,14 @@ function App() {
 
           <Footer />
         </div>
+        <ToastContainer 
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          pauseOnHover
+        />
       </ThemeProvider>
     </>
   )

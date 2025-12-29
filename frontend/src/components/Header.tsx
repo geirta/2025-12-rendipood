@@ -20,9 +20,6 @@ import LanguageIcon from '@mui/icons-material/Language';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
-const pages = ['Films', 'Rentals'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
 type HeaderProps = {
   mode: 'light' | 'dark';
   toggleTheme: () => void;

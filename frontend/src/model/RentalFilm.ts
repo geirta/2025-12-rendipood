@@ -1,8 +1,13 @@
 export type RentalFilm = {
+  id: number,
+  initialDays: number,
+  lateDays: number,
+  returned: boolean,
+  film: {
     id: number,
-    initialDays: number,
-    lateDays: number,
-    returned: boolean,
-    filmId: number,
-    rentalId: number
+    name: string
+  },
+  rental: {
+    id: number
   }
+}

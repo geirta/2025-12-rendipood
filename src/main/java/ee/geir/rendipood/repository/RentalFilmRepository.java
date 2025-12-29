@@ -6,4 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface RentalFilmRepository extends JpaRepository<RentalFilm, Long> {
 
     RentalFilm findByFilm_IdAndReturnedFalse(Long id);
+
+    boolean existsByRental_IdAndReturnedFalse(Long id);
+
 }

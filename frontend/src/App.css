@@ -15,6 +15,10 @@ html, body, #root {
     flex: 1;
 }
 
+.container {
+  padding-top: 1.5rem;
+}
+
 footer {
   background: black;
   color: white;

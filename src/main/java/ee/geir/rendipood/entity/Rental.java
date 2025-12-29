@@ -26,4 +26,6 @@ public class Rental {
     @JsonManagedReference
     private List<RentalFilm> rentalFilms;
 
+    private boolean complete;
+
 }
